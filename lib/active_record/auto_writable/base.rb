@@ -14,7 +14,7 @@ module ActiveRecord
 
       METHOD_NAMES.each do |method_name|
         define_method(method_name) do |*args, **kwargs, &block|
-          ::ActiveRecord::Base.connected_to(role: :writing) do
+          ::ActiveRecord::AutoWritable.configuration.proxy.call do
             super(*args, **kwargs, &block)
           end
         end
