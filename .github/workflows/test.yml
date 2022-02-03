@@ -20,5 +20,8 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
+    - run: |
+        cd spec/dummy
+        bin/rails db:setup RAILS_ENV=test
     - name: Run the default task
       run: bundle exec rake
