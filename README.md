@@ -1,5 +1,7 @@
 # ActiveRecord::AutoWritable
 
+[![test](https://github.com/r7kamura/active_record-auto_writable/actions/workflows/test.yml/badge.svg)](https://github.com/r7kamura/active_record-auto_writable/actions/workflows/test.yml)
+
 Automatically switch to writable role on ActiverRecord writable methods.
 
 ## Installation
