@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-require 'active_record/auto_writable'
+ENV['RAILS_ENV'] ||= 'test'
+require File.expand_path('dummy/config/environment', __dir__)
+require 'rspec/rails'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
