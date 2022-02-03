@@ -2,12 +2,28 @@ PATH
   remote: .
   specs:
     active_record-auto_writable (0.1.0)
+      activerecord (>= 6)
+      activesupport (>= 6)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    activemodel (7.0.1)
+      activesupport (= 7.0.1)
+    activerecord (7.0.1)
+      activemodel (= 7.0.1)
+      activesupport (= 7.0.1)
+    activesupport (7.0.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
     ast (2.4.2)
+    concurrent-ruby (1.1.9)
     diff-lcs (1.5.0)
+    i18n (1.8.11)
+      concurrent-ruby (~> 1.0)
+    minitest (5.15.0)
     parallel (1.21.0)
     parser (3.1.0.0)
       ast (~> 2.4.1)
@@ -42,6 +58,8 @@ GEM
     rubocop-rspec (2.8.0)
       rubocop (~> 1.19)
     ruby-progressbar (1.11.0)
+    tzinfo (2.0.4)
+      concurrent-ruby (~> 1.0)
     unicode-display_width (2.1.0)
 
 PLATFORMS
